@@ -1,0 +1,41 @@
+# .gitignore - Copy this exactly
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+compliance_env/
+venv/
+ENV/
+
+# Data (too large for Git)
+data/raw/*
+data/processed/*
+!data/samples/  # Keep samples
+
+# Models (too large)
+models/checkpoints/*
+models/final/*
+*.bin
+*.pth
+
+# Logs and results
+logs/
+results/*.png
+results/*.csv
+
+# API Keys and secrets
+.env
+*.key
+api_keys.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
