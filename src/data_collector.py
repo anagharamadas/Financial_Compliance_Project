@@ -131,16 +131,20 @@ class SECDataCollector:
         """
 
         try:
-            # Use SEC API to get clean text
+            # Download filing content directly from SEC EDGAR
+            # The filing_url should be a direct link to the SEC filing
             response = requests.get(
-                f"{self.base_url}/filing/render",
-                params = {"url": filing_url},
-                headers = {"Authorization": self.api_key}
+                filing_url,
+                headers = {
+                    "User-Agent": "Financial Compliance Project (your-email@example.com)",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+                }
             )
 
             if response.status_code == 200:
                 return response.text
             else:
+                print(f"Download failed with status {response.status_code}: {response.text}")
                 return None
 
         except Exception as e:
