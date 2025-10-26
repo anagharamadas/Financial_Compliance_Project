@@ -1,0 +1,84 @@
+{
+    "DISCLOSURE_001" : {
+        "category": "Material Disclosure",
+        "description": "Companies must disclose all material information",
+        "severity": "HIGH",
+        "keywords": [
+            "material information",
+            "failed to disclose",
+            "omitted",
+            "undisclosed",
+            "withheld"
+        ],
+        "exmaples": [
+            "The company failed to disclose pending litigation",
+            "Material information was omitted from the filing"
+        ]
+    },
+
+    "RISK_001": {
+        "category": "Risk Factor Disclosure",
+        "description": "Must provide adequate risk disclosures",
+        "severity": "MEDIUM",
+        "keywords": [
+            "risk factor",
+            "material risk",
+            "business risk",
+            "forward-looking",
+            "uncertainty"
+        ],
+        "examples": [
+            "No specific risk quantification provided",
+            "Generic risk disclosures without detail"
+        ]
+    },
+
+    "FINANCIAL_001": {
+        "category": "Financial Reporting",
+        "description": "Financial statements must be accurate",
+        "severity": "HIGH",
+        "keywords": [
+            "restatement",
+            "error",
+            "misstatement",
+            "correction",
+            "revision"
+        ],
+        "examples": [
+            "Financial statements have been restated",
+            "Material weaknesses in financial controls"
+        ]
+    },
+
+    "CONTROL_001": {
+        "category": "Internal Controls",
+        "description": "Effective internal controls required",
+        "severity": "HIGH",
+        "keywords": [
+            "material weakness",
+            "control deficiency",
+            "inadequate controls",
+            "control failure"
+        ],
+        "examples": [
+            "Material weaknesses identified in internal controls",
+            "Control deficiencies noted during audit"
+        ]
+    },
+
+    "INSIDER_001": {
+        "category": "Insider Trading",
+        "description": "Prevention of insider trading",
+        "severity": "HIGH",
+        "keywords": [
+            "insider trading",
+            "material non-public",
+            "selective disclosure",
+            "blackout period"
+        ],
+        "examples": [
+            "Trading on material non-public information",
+            "Selective disclosure to analysts"
+        ]
+    }
+}
